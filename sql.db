@@ -1,0 +1,15 @@
+CREATE DATABASE quiz_app;
+
+USE quiz_app;
+
+CREATE TABLE questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question TEXT NOT NULL,
+    options JSON NOT NULL,
+    answer TEXT NOT NULL
+);
+
+INSERT INTO questions (question, options, answer) VALUES
+("What does HTML stand for?", '["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"]', "Hyper Text Markup Language"),
+("Who is making the Web standards?", '["Google", "Microsoft", "The World Wide Web Consortium"]', "The World Wide Web Consortium"),
+("What does CSS stand for?", '["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Sheets"]', "Cascading Style Sheets");
